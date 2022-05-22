@@ -1,0 +1,92 @@
+@import "../scss/variables";
+@import "../scss/elements/header";
+@import "../scss/elements/startPage";
+@import "../scss/elements/userNotFound";
+@import "../scss/elements/reposNotFound";
+@import "../scss/elements/content";
+@import "../scss/elements/user";
+@import "../scss/elements/repos";
+@import "../scss/elements/pagination";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  overflow-x: hidden;
+  font-family: Inter, sans-serif;
+  background: #f9f9f9
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
+
+input, input:focus {
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 28px 13px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-block__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+}
+
+.info-block__description {
+  text-align: center;
+  font-size: 22px;
+  line-height: 140%;
+  color: #808080;
+}
+
+.loader {
+  margin: 0 auto;
+  margin-top: 190px;
+  border: 16px solid darkgray;
+  border-top: 16px solid $second-color;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

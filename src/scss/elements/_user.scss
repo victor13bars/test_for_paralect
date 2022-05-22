@@ -1,0 +1,66 @@
+.user {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  @media (max-width: 1279px) {
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.user__avatar {
+  width: 280px;
+  border-radius: 50%;
+}
+
+.user__name {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: $main-color;
+}
+
+.user__login {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 28px;
+  color: $second-color;
+  text-decoration: none;
+}
+
+.user__follow {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 25px;
+}
+
+.user__follow-content {
+  display: flex;
+  align-items: center;
+}
+
+.user__follow-icon {
+  width: 24px;
+  margin-right: 8px;
+}
+
+
+.user__follow-count {
+  line-height: 150%;
+  color: $main-color;
+}

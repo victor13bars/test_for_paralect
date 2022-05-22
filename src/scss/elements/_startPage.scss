@@ -1,0 +1,13 @@
+.start-page {
+  margin-top: 197px;
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 425px) {
+    margin-top: 50px;
+  }
+}
+
+.start-page__content {
+  width: 210px;
+}

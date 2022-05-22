@@ -1,0 +1,45 @@
+.repos {
+  width: 877px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.repos__title {
+  margin-left: 2px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: $main-color;
+  @media (max-width: 1279px) {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+.repos__content {
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.repo__item {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 24px 32px 24px 32px;
+}
+
+.repo__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: $second-color;
+  text-decoration: none;
+}
+
+.repo__description {
+  margin-top: 16px;
+  line-height: 19px;
+  color: $main-color
+}

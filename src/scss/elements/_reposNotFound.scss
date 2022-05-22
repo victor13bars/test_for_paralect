@@ -1,0 +1,14 @@
+.repos-empty {
+  margin-top: 197px;
+  width: 100%;
+  @media (max-width: 1279px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
+}
+
+.repos-empty__content {
+  width: 243px;
+}
